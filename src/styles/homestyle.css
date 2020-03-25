@@ -1,0 +1,62 @@
+#scroll{
+    border:0px solid;
+    height:530px;
+    width:50%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+#scroll::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+   
+}/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+#scroll::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+#scroll::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+#scroll::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}/* Ponemos un color de fondo y redondeamos las esquinas del track */
+#scroll::-webkit-scrollbar-track {
+    background: #555659;
+    border-radius: 4px;
+}
+.container{
+    margin-top: 20px;
+}
+.container h1{
+  color: #DFDFDF;
+  position: relative;
+
+}
+/* Cambiamos el fondo cuando esté en active o hover
+#scroll::-webkit-scrollbar-track:hover,
+#scroll::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+} */
+.data-list, .feature-list{
+    margin-bottom: 0em;
+}
+.data-list li, .feature-list li{
+    border-bottom: 1px solid #2D3136;
+}
+.data-list li{
+   color:#B7B8BA;
+}
+
+
+.map{
+    margin-top:10px;
+}
+.map h1{
+    color: #E98E04;
+    
+}

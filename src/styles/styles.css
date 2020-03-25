@@ -1,0 +1,15 @@
+body{
+    background: #202326;
+}
+.main-header{
+    background: #1F1F1F;
+ border-bottom: #1F1F1F;
+ -webkit-box-shadow: 2px 2px 24px -1px rgba(0,0,0,0.75);
+ -moz-box-shadow: 2px 2px 24px -1px rgba(0,0,0,0.75);
+ box-shadow: 2px 2px 24px -1px rgba(0,0,0,0.75);
+ 
+}
+.main-header li{
+    color: #fff !important;
+    border: none;
+}

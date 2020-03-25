@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./styles/styles.scss"
+import "./styles/styles.css"
+import "./styles/homestyle.css"
+import Explorar from './components/Pages/Explorar';
+import Prevenir from "./components/Pages/Prevenir"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import MainMenu from './components/MainMenu'
+import Reportar from './components/Pages/Reportar'
+import Home from './components/Pages/Home';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <Router>
+    <MainMenu />
+    <Switch>
+      <Route path="/" exact component={ Home } />
+      <Route path="/Explorar" component={ Explorar } />  
+      <Route path="/Prevenir" component={ Prevenir } />  
+      <Route path="/Reportar" component={ Reportar } />  
+      <Route component={() => (
+        <div className="ed-grid">
+          <h1>Error 404</h1>
+          <span>Página no encontrada</span>  
+        </div>
+      )} />  
+    </Switch> 
+  </Router>
+)
 
 export default App;
