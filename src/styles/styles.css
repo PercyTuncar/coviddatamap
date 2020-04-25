@@ -1,5 +1,5 @@
 body{
-    background: #202326;
+    background: #272B2F;
 }
 .main-header{
     background: #1F1F1F;
@@ -12,4 +12,49 @@ body{
 .main-header li{
     color: #fff !important;
     border: none;
+}
+.title_rumores{
+    width: 80%;
+    margin-left: 10%;
+   text-align: center;
+   margin-top: 35px;
+   margin-bottom: 25px;
+   color: #DFE0E0;
+}
+.title_main{
+    width: 80%;
+    margin-left: 10%;
+   text-align: center;
+   margin-top: 15px;
+   margin-bottom: 5px;
+   color: #DFE0E0;
+}
+
+button, a{
+ color: #fff;
+ font-size: 15px;
+}
+button, #donar{
+    width: 150px;
+    background-color: #F1A000;
+    border: 1px solid #FBA905;
+}
+button, #donar :hover{
+    background-color: #006DC6;
+    border: 1px solid #00CBFF;
+}
+
+.icon_card img{
+    position: relative;
+    width: 40%;
+    margin-top: 5px;
+}
+
+
+
+.main-menu #donar_nav{
+    border: 1px solid #F1A000;
+    padding: 7px;
+    margin: 1px;
+    border-radius: 5px;
 }

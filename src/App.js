@@ -6,8 +6,9 @@ import Explorar from './components/Pages/Explorar';
 import Prevenir from "./components/Pages/Prevenir"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import MainMenu from './components/MainMenu'
-import Reportar from './components/Pages/Reportar'
+import Tendencia from './components/Pages/Tendencia'
 import Home from './components/Pages/Home';
+import DonarPage from './components/Pages/DonarPage'
 
 const App = () => (
   <Router>
@@ -16,7 +17,8 @@ const App = () => (
       <Route path="/" exact component={ Home } />
       <Route path="/Explorar" component={ Explorar } />  
       <Route path="/Prevenir" component={ Prevenir } />  
-      <Route path="/Reportar" component={ Reportar } />  
+      <Route path="/Tendencia" component={ Tendencia } /> 
+      <Route path="/donar" component={DonarPage}/>
       <Route component={() => (
         <div className="ed-grid">
           <h1>Error 404</h1>

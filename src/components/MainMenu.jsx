@@ -1,6 +1,6 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
-
+import '../menu'
 const MainMenu = () => (
     <header className="main-header">
       <div className="ed-grid s-grid-5 lg-grid-4">
@@ -12,13 +12,15 @@ const MainMenu = () => (
         <div className="s-grid-1 lg-cols-3 s-cross-center s-main-end header-links">
           <nav className="main-menu" id="main-menu">
             <ul>
-                <li><NavLink exact to="/" activeClassName="activo"> Explorar </NavLink></li>
-                <li><NavLink to="/Prevenir" activeClassName="activo"> Prevenir </NavLink></li>
-                <li><NavLink to="/Reportar" activeClassName="activo"> Reportar </NavLink></li>
-                <li><NavLink to="/usuarios" activeClassName="activo"> Usuarios </NavLink></li>
+                <li><NavLink exact to="/" active ClassName="activo"> Inicio  </NavLink></li>
+                <li><NavLink to="/Prevenir" active ClassName="activo"> Síntomas </NavLink></li>
+                <li><NavLink to="/Tendencia" active ClassName="activo"> Información </NavLink></li>
+                <li><NavLink to="/donar" active ClassName="activo" id="donar_nav"> Donar </NavLink></li>
             </ul>
           </nav>
-          <div className="main-menu-toggle to-l" id="main-menu-toggle"></div>
+          <div  className="main-menu-toggle to-l" id="main-menu-toggle"> 
+          </div>
+      
         </div>
       </div>
     </header>

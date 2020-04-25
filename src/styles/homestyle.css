@@ -1,31 +1,54 @@
-#scroll{
-    border:0px solid;
-    height:530px;
-    width:50%;
-    overflow-y:scroll;
-    overflow-x:hidden;
+
+.ed-container{
+  margin-top: 10px;
 }
-#scroll::-webkit-scrollbar {
+
+#share{
+    border:0px solid;
+    height:80%;
+    width:22%;
+    margin-top: 10px;
+    border-radius: 12px;;
+    background: #2D3136;
+}
+#share::-webkit-scrollbar {
     width: 8px;     /* Tamaño del scroll en vertical */
     height: 8px;    /* Tamaño del scroll en horizontal */
    
 }/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
-#scroll::-webkit-scrollbar-thumb {
+#share::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 4px;
 }
-
-/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
-#scroll::-webkit-scrollbar-thumb:hover {
-    background: #b3b3b3;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+.share ul li{
+    list-style: none;
+    
+}
+.share h3{
+    margin-top: 15px;
+    margin-left: 25px;
+    color: #B7B8BA;
 }
 
+.feature-list li::before{
+    background: none;
+}
+.feature-list h4{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+/*#scroll::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+} */
+
 /* Cambiamos el fondo cuando esté en active */
-#scroll::-webkit-scrollbar-thumb:active {
+/*#scroll::-webkit-scrollbar-thumb:active {
     background-color: #999999;
 }/* Ponemos un color de fondo y redondeamos las esquinas del track */
-#scroll::-webkit-scrollbar-track {
+/*#scroll::-webkit-scrollbar-track {
     background: #555659;
     border-radius: 4px;
 }
@@ -36,7 +59,7 @@
   color: #DFDFDF;
   position: relative;
 
-}
+} 
 /* Cambiamos el fondo cuando esté en active o hover
 #scroll::-webkit-scrollbar-track:hover,
 #scroll::-webkit-scrollbar-track:active {
@@ -57,6 +80,217 @@
     margin-top:10px;
 }
 .map h1{
-    color: #E98E04;
-    
+    color: #E98E04;   
 }
+.map iframe{
+    border: 2px solid #B7B8BA;
+    border-radius: 12px;
+}
+
+
+/* Social Network*/
+
+  .middle {
+    margin:0;
+    padding:0;
+    text-align: center;
+  }
+  
+  .btn {
+    display:inline-block;
+    width:40px;
+    height: 40px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s linear;
+  }
+  
+  .btn i {
+    line-height: 40px;
+    font-size: 20px;
+    transition: 0.3s linear;
+  }
+  .btn:nth-child(1) i {
+    color:#E98E04;
+  }
+  .btn:nth-child(2) i {
+    color:#3b5998;
+  }
+  .btn:nth-child(3) i {
+    color:#1da1f2;
+  }
+  .btn:nth-child(4) i {
+    color:#00bb2d;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .btn:hover i {
+    transform: scale(1.2);
+    color: #fff;
+  }
+  
+  .btn:before {
+    content:"";
+    position:absolute;
+    width:120%;
+    height:120%;
+    transform: rotate(45deg);
+    left: -110%;
+    top:90%;
+  }
+  .btn:nth-child(1)::before {
+    background: #E98E04;
+  }
+  .btn:nth-child(2)::before {
+    background: #3b5998;
+  }
+  .btn:nth-child(3)::before {
+    background: #1da1f2;
+  }
+  .btn:nth-child(4)::before {
+    background: #00bb2d ;
+  }
+  
+  .btn:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+  
+  @keyframes aaa {
+    0% {
+      left: -110%;
+      top:90%;
+    }
+    50% {
+      left:10%;
+      top: -30%;
+    }
+    100% {
+      left: -10%;
+      top: -10%;
+    }
+  }
+
+
+  /*Csos positivos analizados muertos*/
+
+#analizados{
+    
+    color: aqua;
+ }
+#confirmados{
+    color: rgb(251, 235, 5);
+  }
+#hospitalizados{
+    color:#ffb52b;
+}
+#recuperados{
+  color:#3dff2b;
+}
+#muertos{
+    color: #ff0000;
+}
+#uci{
+  color: #ff8800;
+}
+
+
+
+/*RESPONSIVE*/
+.data-list li, .feature-list li{
+  padding-bottom:0rem;
+}
+@media screen and (max-width:1024px) {
+    .s-30, .ed-item.s-30{
+      width: 100%;
+  }
+  #share{
+    width: 100%;
+    margin-left: 05%;
+    margin-top: 0;
+    height: 0;
+    
+    float: left;
+}
+
+  }
+
+  @media screen and (max-width:640px) {
+    .s-30, .ed-item.s-30{
+      width: 100%;
+  }
+    #share{
+        width: 100%;
+        margin-left: 05%;
+        margin-top: 0;
+    }
+    #share li{
+        display: inline-block;
+        align-content: center;
+       }
+  }
+
+
+
+  .main-banner{
+    background: #272B2F;
+  }
+  .main-banner .t2{
+    margin-bottom: 15px;
+  }
+
+  .main-banner p{
+    color: #DFE0E0;
+  }
+  .main-banner p span{
+    color: #FF9900;
+  }
+
+ /*
+.modalContainer .modaldos{
+    background-color:rgba(27, 23, 34, 0.6);
+    border: 2px solid red;
+    width: 100%;
+    position: relative;
+    margin-top: -300px;
+  }*/
+  .modalContainer .modaldos{
+  
+    margin-top: -0px;
+  }
+
+
+  #prevencion{
+    margin-top: 30px;
+  }
+
+  #prevencion h2{
+    color: #FF9900;
+  }
+
+  #prevencion p{
+    color: #B9B9B9;
+  }
+
+
+
+  .main-menu-toggle{
+    position: relative;
+    z-index: 300;
+    width: 30px;
+    height: 20px;
+    box-shadow: 0 4px var(--text-color) inset;
+    cursor: pointer;
+  }
+
+
+  .main-menu .active{
+    color: #FF9900;
+  }
